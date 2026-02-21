@@ -205,3 +205,21 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Hugging Face & Machine Learning Specific ---
+# Ignore the hidden cache folder where HF downloads models
+.cache/
+huggingface/
+
+# Ignore large model weight files
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.model
+*.onnx
+
+# Ignore any local data you might download for BME projects
+data/
+*.csv
+*.json
